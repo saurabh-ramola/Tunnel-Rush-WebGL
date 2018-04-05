@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tunnel Rush by Saurabh </title>
+    <link rel="stylesheet" href="../webgl.css" type="text/css">
+    <style>
+      
+#div1 {
+    width: 1022px;
+    height: 30px;
+    padding: 30px;
+    border: 10px solid red;
+    background-color: yellow;
+
+}
+
+
+    </style>
+  </head>
+
+  <body id="yay">
+    <table id = "div1"> 
+      <tr>
+        <td id = "score1" style="font-size:50px ; text-align:left">Score: </td>
+        <td id = "score" style="font-size:50px ; text-align:left"></td>
+        <td id = "speed1" style="font-size:50px ; text-align:left">Speed: </td>
+        <td id = "speed" style="font-size:50px ; text-align:left"></td>
+    </tr>
+  </table>
+    
+  
+    <canvas id="glcanvas" width="1024" height="720"></canvas>
+
+    <audio src="assets/Tunnelrush.m4a" id="backaudio" loop></audio>
+    <audio src="assets/boost.m4a" id="boost" ></audio>
+    <audio src="assets/dead.m4a" id="dead" loop></audio>
+
+  </body>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+      <script src="./mousetrap.min.js"></script>
+  <script src="./tunnel.js"></script>  
+  
+  <script src="./obstacles.js"></script>  
+  <script src="./gl-matrix.js"></script>
+  <script type = "text/javascript" src="./webgl-demo.js"></script>
+
+</html>
